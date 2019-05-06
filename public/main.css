@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -57,13 +58,22 @@ body {
   font-weight: 300;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project {
+  align-items: center;
+  justify-content: center;
+  display: grid;
   border: 1px solid rgb(168, 168, 168);
   border-radius: 15px;
-  margin: 3% 5%;
+  margin: 10px;
   text-align: center;
   padding: 25px 0px;
   line-height: 2.5em;
+  width: 100%;
 }
 
 .project-title {
@@ -81,4 +91,10 @@ body {
 
 .project-content {
   margin: 0 15px;
+}
+
+@media (min-width: 700px) {
+  .project {
+    width: calc(50% - 22px);
+  }
 }
