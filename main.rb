@@ -1,9 +1,6 @@
 require "sinatra"
 require "erb"
 require "sinatra/reloader"
-# require_relative "projects_data"
-
-
 
 puts "http://localhost:#{settings.port} 🚀"
 
