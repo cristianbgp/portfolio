@@ -14,11 +14,11 @@
 <section class="projects">
   <% @projects.each do |project| %>
   <article class="project">
-    <div class="project-title">
+    <header class="project-title">
       <a href="<%= project[:project_url] %>" target="_blank" rel="noopener">
         <h5><%= project[:project_title] %></h5>
       </a>
-    </div>
+    </header>
     <div class="project-content">
       <p><%= project[:project_content] %></p>
     </div>
